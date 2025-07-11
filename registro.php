@@ -21,6 +21,11 @@ require_once('plantillas/cabecera.php');
             <input type="text" name="apellido2" id="apellido2" class="form-control">
         </div>
 
+       <div class="control mb-3">
+            <label for="dni" class="col-sm-2 col-form-label">DNI:</label>
+            <input type="text" name="dni" id="dni" required class="form-control">
+        </div>
+
         <div class="control mb-3">
             <label for="fechanac" class="col-sm-2 col-form-label">Fecha Nacimiento:</label>
             <input type="date" name="fechanac" id="fechanac" class="form-control">

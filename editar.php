@@ -21,6 +21,7 @@ $id = $fila['id'];
 $nombre=$fila['nombre'];
 $apellido1=$fila['apellido1'];
 $apellido2=$fila['apellido2'];
+$dni=$fila['dni'];
 $fechaNac = $fila['fecha_nac'];
 $email= $fila['email'];
 
@@ -43,6 +44,11 @@ $email= $fila['email'];
         <div  class="control mb-3">
             <label for="apellido2" class="col-sm-2 col-form-label">Apellido2:</label>
             <input type="text" name="apellido2" id="apellido2"  value='<?=$apellido2?>' class="form-control">
+        </div>
+
+        <div  class="control mb-3">
+            <label for="dni" class="col-sm-2 col-form-label">DNI:</label>
+            <input type="text" name="dni" id="dni" required value='<?=$dni?>' class="form-control">
         </div>
 
         <div  class="control mb-3">

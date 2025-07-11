@@ -9,6 +9,7 @@ require_once('plantillas/cabecera.php');
     $nombre = $_POST['nombre'];
     $apellido1 = $_POST['apellido1'];
     $apellido2 = $_POST['apellido2'];
+    $dni = $_POST['dni'];
     $fechaNac = $_POST['fechanac'];
     $email = $_POST['email'];
 
@@ -20,13 +21,14 @@ require_once('plantillas/cabecera.php');
         <li>Nombre: <?=$nombre?></li>
         <li>Apellido1: <?=$apellido1?></li>
         <li>Apellido2: <?=$apellido2?></li>
+        <li>DNI: <?=$dni?></li>
         <li>Fecha de Nacimiento: <?=$fechaNac?></li>
         <li>Correco Electrónico: <?=$email?> </li>
     </ul>
 
     <?php 
         $consulta = 
-            "insert into alumnos (nombre,apellido1,apellido2,fecha_nac, email) values('$nombre','$apellido1', '$apellido2', '$fechaNac', '$email') ";
+            "insert into alumnos (nombre,apellido1,apellido2,dni,fecha_nac, email) values('$nombre','$apellido1', '$apellido2', '$dni', '$fechaNac', '$email') ";
 
             /* $consulta = 
             'insert into alumnos (nombre,apellido1,apellido2,fecha_nac, email) values("'.$nombre.'","'.$apellido1.'", '$apellido2', '$fechaNac', '$email') ';*/

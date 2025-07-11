@@ -14,11 +14,13 @@ create user 'seneca'@'%' identified by '1234';
 -- Damos permiso al usuario para realizar cualquier sentencia en la base de datos seneca
 grant all PRIVILEGES on seneca.* to 'seneca'@'%';
 
+DROP TABLE IF EXISTS alumnos;
 CREATE TABLE alumnos (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     nombre varchar(30) not null,
     apellido1 varchar(30) not null ,
     apellido2 VARCHAR(30),
+    dni CHAR(9) UNIQUE,
     fecha_nac DATE,
     email VARCHAR(100)
 );
